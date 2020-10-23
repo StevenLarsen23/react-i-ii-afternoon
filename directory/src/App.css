@@ -33,24 +33,51 @@
 
 .Content {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.Window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .Main {
+  width: 50%;
+  margin: 5%;
+  text-align: left;
+  padding-left: 5%;
+  background-color: white;
   
 }
 
 .List {
-  
+  text-align: left;
+}
+
+.Buttons {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  background-color: black;
+  color: white
 }
 
 .Button {
+  margin-top: -8%;
+  height: 3px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
-
+  /* align-items: flex-start; */
+  background-color: black;
+  color: white;
+  border: none;
 }
 
 @keyframes App-logo-spin {

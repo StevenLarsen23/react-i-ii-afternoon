@@ -22,8 +22,7 @@ class App extends Component {
             <Content />
           </div>
           /*<div>
-          <Buttons className='Previous'/>
-          <Buttons className='Next'/>
+          
         </div> */
         }
       </div>

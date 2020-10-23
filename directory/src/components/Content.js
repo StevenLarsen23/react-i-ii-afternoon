@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import data from "../data";
 
+
 class Content extends Component {
   constructor() {
     super();
@@ -8,12 +9,15 @@ class Content extends Component {
       id: 0,
     };
     this.handleInc = this.handleInc.bind(this);
+    this.handleDec = this.handleDec.bind(this);
   }
 
   handleInc() {
     this.setState({
       id: this.state.id + 1,
-    //   if(this.state.id === 0)
+    //   if(this.state.id = 25) {
+    //       this.state.id + 0
+    //   }
         
     });
   }
@@ -25,6 +29,7 @@ class Content extends Component {
   }
   render() {
     return (
+        <div className={"Window"}>
       <div className={"Main"}>
         <h1 Text style={{ textDecorationLine: "underline" }}>
           {data[this.state.id].name.first} {data[this.state.id].name.last}
@@ -50,12 +55,15 @@ class Content extends Component {
           <li className={"List"}>{data[this.state.id].favoriteMovies[1]}</li>
           <li className={"List"}>{data[this.state.id].favoriteMovies[2]}</li>
         </ol>
+        </div>
+        <div className={"Buttons"}>
         <button className={"Button"} onClick={this.handleDec}>
           Previous
         </button>
         <button className={"Button"} onClick={this.handleInc}>
           Next
         </button>
+        </div>
       </div>
     );
   }
