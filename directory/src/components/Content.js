@@ -31,7 +31,7 @@ class Content extends Component {
     return (
         <div className={"Window"}>
       <div className={"Main"}>
-        <h1 Text style={{ textDecorationLine: "underline" }}>
+        <h1>
           {data[this.state.id].name.first} {data[this.state.id].name.last}
         </h1>
         <p>
@@ -58,10 +58,10 @@ class Content extends Component {
         </div>
         <div className={"Buttons"}>
         <button className={"Button"} onClick={this.handleDec}>
-          Previous
+        &lt; Previous
         </button>
         <button className={"Button"} onClick={this.handleInc}>
-          Next
+          Next &gt;
         </button>
         </div>
       </div>
