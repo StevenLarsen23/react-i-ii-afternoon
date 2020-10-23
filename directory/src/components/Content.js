@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import data from "../data";
+// import Index from "./components/Index";
+
 
 
 class Content extends Component {
@@ -12,25 +14,33 @@ class Content extends Component {
     this.handleDec = this.handleDec.bind(this);
   }
 
-  handleInc() {
-    this.setState({
-      id: this.state.id + 1,
-    //   if(this.state.id = 25) {
-    //       this.state.id + 0
-    //   }
-        
-    });
+  handleInc() { 
+  if(this.state.id === 24) {
+    this.setState({id:  0})
+  } else { this.setState({
+    id: this.state.id + 1,
   }
+  
+);
 
-  handleDec() {
-    this.setState({
-      id: this.state.id - 1,
-    });
+  }
+} 
+handleDec() {
+  if(this.state.id === 0) {
+    this.setState({id:  24})
+  } else { this.setState({
+    id: this.state.id - 1,
+  }
+  
+);
+
+  }
   }
   render() {
     return (
         <div className={"Window"}>
       <div className={"Main"}>
+    <h2 className={'Index'}>{this.state.id + 1}/25</h2>
         <h1>
           {data[this.state.id].name.first} {data[this.state.id].name.last}
         </h1>

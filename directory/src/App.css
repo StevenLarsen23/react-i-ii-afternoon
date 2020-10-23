@@ -49,11 +49,20 @@
 
 .Main {
   width: 50%;
+  height: 50%;
   margin: 5%;
   text-align: left;
   padding-left: 5%;
+  padding-bottom: 2%;
   background-color: white;
   
+}
+
+.Main > h2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2%;
+  margin-top: 1%;
 }
 
 .Main > h1 {
@@ -63,6 +72,7 @@
 
 .List {
   text-align: left;
+  max-height: 18px;
 }
 
 .Buttons {
