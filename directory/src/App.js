@@ -3,7 +3,7 @@ import "./App.css";
 import data from "./data";
 import Header from "./components/Header";
 import Content from "./components/Content";
-import Index from "./components/Index";
+// import Index from "./components/Index";
 
 class App extends Component {
   constructor() {
@@ -21,9 +21,6 @@ class App extends Component {
           <div className="Content">
             <Content />
           </div>
-          /*<div>
-          
-        </div> */
         }
       </div>
     );
