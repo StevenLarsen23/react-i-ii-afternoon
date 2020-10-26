@@ -79,16 +79,28 @@
   width: 55%;
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-start; */
-  background-color: black;
+  /* background-color: black; */
   color: white
+}
+
+.FuncButtons {
+  font-size: larger;
+  color: white;
+  max-height: 3vh;
+  /* display: flex; */
+  /* align-content: space-around; */
+  background-color: rgb(85, 155, 221);
+  /* justify-content: space-around; */
+  margin-top: -15%;
+  border-radius: 25%;
 }
 
 .Button {
   margin-top: -8%;
-  height: 3px;
+  font-size: larger;
+  height: 3%;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* align-items: flex-start; */
   background-color: black;
   color: white;

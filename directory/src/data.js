@@ -283,7 +283,33 @@ const data = [
       "I Heart Huckabees",
       "Howard Zinn: You Can't Be Neutral on a Moving Train"
     ]
-  }
+  },
+  // {
+  //   id: 26,
+  //   name: { first: "Bruce", last: "Wayne" },
+  //   city: "Gotham",
+  //   country: "United States",
+  //   employer: "Self",
+  //   title: "Owner/CEO",
+  //   favoriteMovies: [
+  //     "It",
+  //     "Darkness Falls",
+  //     "Crime and Punishment"
+  //   ]
+  // },
+  // {
+  //   id: 27,
+  //   name: { first: "Clark", last: "Kent" },
+  //   city: "Smallville",
+  //   country: "United States",
+  //   employer: "Daily Planet",
+  //   title: "Writer",
+  //   favoriteMovies: [
+  //     "Alien",
+  //     "Homeward Bound",
+  //     "Independance Day"
+  //   ]
+  // },
 ];
 
 export default data;
